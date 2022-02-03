@@ -5,8 +5,9 @@ patch for LLVM to generate O0 bitcode
 ### patch
 ```bash
 git clone https://github.com/llvm/llvm-project
+cd llvm-project
 git checkout 5521236a18074584542b81fd680158d89a845fca
-path < WriteBitcode.patch
+patch -p1 < PATCH_FILE
 ```
 
 ### build clang
